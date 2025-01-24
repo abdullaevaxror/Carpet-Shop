@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -29,6 +26,7 @@ session_start();
             font-size: 24px;
             font-weight: bold;
             color: #333;
+            text-decoration: none;
         }
 
         .navbar .menu {
@@ -179,14 +177,13 @@ session_start();
 <body>
 <!-- Navbar -->
 <div class="navbar">
-    <div class="logo">BAYAN SÜLU</div>
+    <a class="logo" href="/">BAYAN SÜLU</a>
     <div class="menu">
-        <a href="#">Gilamlar</a>
-        <a href="#">Kovriklar</a>
-        <a href="#">Hammom uchun</a>
-        <a href="#">Yo'lak gilamlari</a>
-        <a href="#">Maxsus gilamlar</a>
-        <a href="#">Aloqa markazi</a>
+        <a href="/product.php">Ковры</a>
+        <a href="#">Коврики</a>
+        <a href="#">Для ванной</a>
+        <a href="#">Дорожки</a>
+        <a href="#">Контакты</a>
     </div>
     <div class="icons">
         <a href="#">🔍</a>
@@ -214,7 +211,12 @@ session_start();
         <p class="price">160.000₸</p>
 
         <div class="actions">
-            <button class="add-to-cart">Savatga qo'shish</button>
+            <form method="POST" action="add_to_cart.php">
+                <input type="hidden" name="product_id" value="1"> <!-- Mahsulot ID -->
+                <input type="hidden" name="product_name" value="Mahsulot nomi">
+                <input type="hidden" name="product_price" value="100000"> <!-- Narxi -->
+                <button type="submit" class="add-to-cart">Savatga qo'shish</button>
+            </form>
             <button class="like">❤</button>
             <button class="whatsapp">WhatsApp</button>
         </div>

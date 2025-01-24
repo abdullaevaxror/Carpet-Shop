@@ -1,16 +1,17 @@
 <?php
-session_start();
+global $pdo;
+require 'db.php'; // Ma'lumotlar bazasiga ulanish
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user_id = 1; // Hozircha qattiq yozilgan
     $product_id = $_POST['product_id'];
 
-    // Sessiyadan mahsulotni o'chirish
-    if (isset($_SESSION['cart'][$product_id])) {
-        unset($_SESSION['cart'][$product_id]);
-    }
+    // Mahsulotni savatdan o'chirish
+    $stmt = $pdo->prepare("DELETE FROM cart WHERE user_id = ? AND product_id = ?");
+    $stmt->execute([$user_id, $product_id]);
 
     // Korzinkaga qayta yo'naltirish
-    header('Location: korzina.php');
+    header('Location: korzinka.php');
     exit();
 }
 ?>

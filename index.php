@@ -109,6 +109,7 @@
             width: 290px;
             height: 400px;
             margin: auto;
+            text-decoration: none;
         }
 
         .card img {
@@ -182,7 +183,6 @@
     </a>
     <!-- Add more cards as needed -->
 </section>
-
 <footer>
     <p>&copy; 2025 Bayan Sulu. Все права защищены. <a href="#">Политика конфиденциальности</a></p>
 </footer>

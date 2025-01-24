@@ -1,6 +1,3 @@
-<?php
-//session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +16,56 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f9f9f9;
             color: #333;
-            padding: 20px;
         }
+
+        /* Navbar uslubi */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar .menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .navbar .menu a:hover {
+            color: #ff6f61;
+        }
+
+        .navbar .icons {
+            display: flex;
+            gap: 15px;
+            font-size: 18px;
+        }
+
+        .navbar .icons a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .navbar .icons a:hover {
+            color: #ff6f61;
+        }
+
 
         header {
             background-color: #fff;
@@ -55,6 +100,11 @@
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 20px;
+        }
+        .word {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
         }
 
         .catalog-item {
@@ -140,6 +190,7 @@
 
         .main-content {
             display: flex;
+            padding: 20px;
         }
 
         footer {
@@ -148,6 +199,9 @@
             text-align: center;
             background-color: #333;
             color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
         .add-to-cart {
             margin-top: auto;
@@ -162,21 +216,25 @@
     </style>
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img src="/images/LogoCatalog.png" alt="Logo">
+<div class="navbar">
+    <a class="logo" href="/">BAYAN SÜLU</a>
+    <div class="menu">
+        <a href="#">Ковры</a>
+        <a href="#">Коврики</a>
+        <a href="#">Для ванной</a>
+        <a href="#">Дорожки</a>
+        <a href="#">Контакты</a>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.php">Главная</a></li>
-            <li><a href="catalog.html">Ковры</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </nav>
-</header>
+    <div class="icons">
+        <a href="#">🔍</a>
+        <a href="#">👤</a>
+        <a href="#">❤</a>
+        <a href="/korzina.php">🛒</a>
+    </div>
+</div>
 
 <main>
-    <h1>Ковры Каталог</h1>
+    <h1 class="word">Ковры Каталог</h1>
     <div class="main-content">
         <aside class="filter-section">
             <h3>Фильтры</h3>
@@ -216,10 +274,10 @@
                 <p>Размер: 60x100</p>
                 <p class="price">160,000 Т</p>
                 <form method="POST" action="add_to_cart.php">
-                    <input type="hidden" name="product_id" value="1"> <!-- Mahsulot ID -->
+                    <input type="hidden" name="product_id" value="2"> <!-- Mahsulot ID -->
                     <input type="hidden" name="product_name" value="Mahsulot nomi">
                     <input type="hidden" name="product_price" value="100000"> <!-- Narxi -->
-                    <button type="submit">Savatga qo'shish</button>
+                    <button type="submit" class="add-to-cart">Savatga qo'shish</button>
                 </form>
             </div>
             <div class="catalog-item">
@@ -228,10 +286,10 @@
                 <p>Размер: 60x100</p>
                 <p class="price">160,000 Т</p>
                 <form method="POST" action="add_to_cart.php">
-                    <input type="hidden" name="product_id" value="2"> <!-- Mahsulot ID -->
-                    <input type="hidden" name="product_name" value="Mahsulot nomi">
-                    <input type="hidden" name="product_price" value="999999"> <!-- Narxi -->
-                    <button type="submit">Savatga qo'shish</button>
+                    <input type="hidden" name="product_id" value="3"> <!-- Mahsulot ID -->
+                    <input type="hidden" name="product_name" value="Aster 0893A LVIZON">
+                    <input type="hidden" name="product_price" value="100000"> <!-- Narxi -->
+                    <button type="submit" class="add-to-cart">Savatga qo'shish</button>
                 </form>
             </div>
             <!-- More items -->

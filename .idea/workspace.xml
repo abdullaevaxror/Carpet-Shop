@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa69d171-5594-4607-b690-38dccb6d83cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/add_to_cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart_display.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/LogoCatalog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/suggested.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/thumbnail1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/korzina.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/remove.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/image52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_to_cart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart_display.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart_display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/korzina.php" beforeDir="false" afterPath="$PROJECT_DIR$/korzina.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remove.php" beforeDir="false" afterPath="$PROJECT_DIR$/remove.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1737644971235" duration="708000" />
       <workItem from="1737647324907" duration="1000" />
       <workItem from="1737648723606" duration="470000" />
-      <workItem from="1737717476455" duration="9159000" />
+      <workItem from="1737717476455" duration="14655000" />
     </task>
     <servers />
   </component>

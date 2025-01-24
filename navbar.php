@@ -177,7 +177,7 @@
 <!-- Navbar -->
 <div class="navbar">
     <div class="logo">BAYAN SÜLU</div>
-    <div class="menu">
+        <div class="menu">
         <a href="#">Gilamlar</a>
         <a href="#">Kovriklar</a>
         <a href="#">Hammom uchun</a>
